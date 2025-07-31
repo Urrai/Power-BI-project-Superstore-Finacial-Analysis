@@ -17,13 +17,13 @@
 
 These KPIs are calculated using DAX and visualized with Power BI cards, gauges, and trend lines:
 
-| KPI Name              | Description                                      | Target Example     |
-|-----------------------|--------------------------------------------------|--------------------|
-| 💰 Sales Current Year vs Last Year | % Increase or decrease every Year                    | ≥ 20%              |
-| 📉 Orders Current Year vs Last Year  | % Increase or decrease every Year                      | ≤ 70%              |
-| 📈 Profit Current Year vs Last Year      | % Increase or decrease every Year       | ≥ 8% annually      |
-| 🧾 Profit Margin Current Year vs Last Year    | % Increase or decrease every Year | ± 5%               |
-| 🏦 Discount Current Year vs Last Year    | % Increase or decrease every Year            | Positive trend     |
+| KPI Name              | Description                                          |
+|-----------------------|--------------------------------------------------|
+| 💰 Sales Current Year vs Last Year | % Increase or decrease every Year  |                  
+| 📉 Orders Current Year vs Last Year  | % Increase or decrease every Year   |
+| 📈 Profit Current Year vs Last Year      | % Increase or decrease every Year  |
+| 🧾 Profit Margin Current Year vs Last Year    | % Increase or decrease every Year|
+| 🏦 Discount Current Year vs Last Year    | % Increase or decrease every Year |
 
 You can customize these KPIs based on your financial goals and lifestyle.
 
@@ -39,4 +39,7 @@ Discount Offered LY = CALCULATE([Discount Offered],DATEADD('Date Table'[Date],-1
 
 
 ## 🧠 Screenshot
+
+
+https://github.com/Urrai/Power-BI-project-Superstore-Finacial-Analysis/blob/main/DIY%20Stores%20Finacial%20Analysis.png
 

@@ -6,12 +6,10 @@
 
 ## 📊 Dashboard Features
 
-- **Income & Expense Tracker**: Monthly breakdowns, category-wise spending, and trends
-- **Savings Goals**: Track progress toward short- and long-term savings targets
-- **Investment Performance**: ROI, asset allocation, and growth trends
-- **Net Worth Monitor**: Assets vs. liabilities over time
+- **Sales Tracker**: Monthly breakdowns, category-wise spending, and trends
+- **Identifying the low and high performing product Goals**: Track progress toward short- and long-term Sales targets
 - **KPI Cards**: Real-time financial health indicators
-- **Smart Filters**: Time periods, categories, accounts, and custom tags
+- **Smart Filters**: Time periods, categories, accounts, and custom tags etc
 
 ---
 
@@ -21,12 +19,11 @@ These KPIs are calculated using DAX and visualized with Power BI cards, gauges, 
 
 | KPI Name              | Description                                      | Target Example     |
 |-----------------------|--------------------------------------------------|--------------------|
-| 💰 Monthly Savings Rate | % of income saved each month                    | ≥ 20%              |
-| 📉 Expense Ratio       | Expenses as % of income                         | ≤ 70%              |
-| 📈 Investment ROI      | Return on investment over selected period       | ≥ 8% annually      |
-| 🧾 Budget Variance     | Difference between planned vs. actual spending  | ± 5%               |
-| 🏦 Net Worth Growth    | Change in net worth month-over-month            | Positive trend     |
-| 🎯 Goal Completion     | % of savings goal achieved                      | ≥ 100%             |
+| 💰 Sales Current Year vs Last Year | % Increase or decrease every Year                    | ≥ 20%              |
+| 📉 Orders Current Year vs Last Year  | % Increase or decrease every Year                      | ≤ 70%              |
+| 📈 Profit Current Year vs Last Year      | % Increase or decrease every Year       | ≥ 8% annually      |
+| 🧾 Profit Margin Current Year vs Last Year    | % Increase or decrease every Year | ± 5%               |
+| 🏦 Discount Current Year vs Last Year    | % Increase or decrease every Year            | Positive trend     |
 
 You can customize these KPIs based on your financial goals and lifestyle.
 
@@ -34,18 +31,12 @@ You can customize these KPIs based on your financial goals and lifestyle.
 
 ## 🧠 DAX Measures (Examples)
 
+
 ```DAX
-MonthlySavingsRate = 
-DIVIDE(
-    SUM(Finance[Amount]),
-    CALCULATE(SUM(Finance[Amount]), Finance[Type] = "Income")
-)
 
-ExpenseRatio = 
-DIVIDE(
-    CALCULATE(SUM(Finance[Amount]), Finance[Type] = "Expense"),
-    CALCULATE(SUM(Finance[Amount]), Finance[Type] = "Income")
-)
+Top 3 Product By sales = CALCULATE([Sales Amount],TOPN(3,ALLSELECTED(financials[Product]),[Sales Amount],DESC),VALUES(financials[Product]))
+Discount Offered LY = CALCULATE([Discount Offered],DATEADD('Date Table'[Date],-1,YEAR))
 
-NetWorth = 
-SUM(Assets[Value]) - SUM(Liabilities[Value])
+
+## 🧠 Screenshot
+

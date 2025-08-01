@@ -30,7 +30,7 @@ You can customize these KPIs based on your financial goals and lifestyle.
 ---
 ## 📈 Screenshots 
 
-Dashboard screenshot- (https://github.com/Urrai/Data-Visualisation-using-POWER-BI/blob/main/Surya%20e-commerce%20Sales%20Dashboard%20using%20Power%20BI%20.png)
+Dashboard screenshot- ([https://github.com/Urrai/Power-BI-project-Superstore-Finacial-Analysis/blob/main/DIY%20Stores%20Finacial%20Analysis.png](https://github.com/Urrai/Power-BI-project-Superstore-Finacial-Analysis/blob/main/DIY%20Stores%20Finacial%20Analysis.png))
 ## 🧠 DAX Measures (Examples)
 
 

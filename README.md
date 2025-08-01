@@ -28,7 +28,9 @@ These KPIs are calculated using DAX and visualized with Power BI cards, gauges, 
 You can customize these KPIs based on your financial goals and lifestyle.
 
 ---
+## 📈 Screenshots 
 
+Dashboard screenshot- (https://github.com/Urrai/Data-Visualisation-using-POWER-BI/blob/main/Surya%20e-commerce%20Sales%20Dashboard%20using%20Power%20BI%20.png)
 ## 🧠 DAX Measures (Examples)
 
 
@@ -37,9 +39,4 @@ You can customize these KPIs based on your financial goals and lifestyle.
 Top 3 Product By sales = CALCULATE([Sales Amount],TOPN(3,ALLSELECTED(financials[Product]),[Sales Amount],DESC),VALUES(financials[Product]))
 Discount Offered LY = CALCULATE([Discount Offered],DATEADD('Date Table'[Date],-1,YEAR))
 
-
-## 🧠 Screenshot
-
-
-Dashboard screenshot- (https://github.com/Urrai/Power-BI-project-Superstore-Finacial-Analysis/blob/main/DIY%20Stores%20Finacial%20Analysis.png)
 

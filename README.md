@@ -41,5 +41,5 @@ Discount Offered LY = CALCULATE([Discount Offered],DATEADD('Date Table'[Date],-1
 ## 🧠 Screenshot
 
 
-https://github.com/Urrai/Power-BI-project-Superstore-Finacial-Analysis/blob/main/DIY%20Stores%20Finacial%20Analysis.png
+Dashboard screenshot- (https://github.com/Urrai/Power-BI-project-Superstore-Finacial-Analysis/blob/main/DIY%20Stores%20Finacial%20Analysis.png)
 
